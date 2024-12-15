@@ -6,10 +6,10 @@
     },
   "scripts": {
     "ng": "ng",
-    "start": "npm install -g @angular/cli@16.1",
+    "start": "node server.js",
     "postinstall": "ng build --prod",
     "json": "json-server --watch mock-api-data.json --port 3000",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
