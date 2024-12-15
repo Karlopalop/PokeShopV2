@@ -6,8 +6,8 @@
     },
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "postinstall": "ng build --prod && npm run json",
+    "start": "serve",
+    "postinstall": "ng build --prod",
     "json": "json-server --watch mock-api-data.json --port 3000",
     "build": "ng build",
     "test": "ng test",
