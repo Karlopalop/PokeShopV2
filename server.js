@@ -1,32 +1,26 @@
 const express = require('express');
-const jsonServer = require('json-server');
 const path = require('path');
+const jsonServer = require('json-server');
 
-// Crear un servidor Express
 const app = express();
 
-// Configurar JSON Server
-const apiServer = jsonServer.create();
-const router = jsonServer.router('mock-api-data.json');
-const middlewares = jsonServer.defaults();
-
-apiServer.use(middlewares);
-apiServer.use(router);
-
-// Servir los archivos estáticos de Angular
+// Servir Angular desde el directorio de construcción
 app.use(express.static(__dirname + '/dist/pokeshop'));
-
-// Redirigir todas las rutas al index.html de Angular
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/pokeshop/index.html'));
 });
 
-// Inicia el servidor de JSON en una ruta específica
-app.use('/api', apiServer);
-
-// Inicia el servidor principal en el puerto especificado por Heroku o en el puerto 8080
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en el puerto ${PORT}`);
+// Configurar y servir `json-server`
+const router = jsonServer.router('mock-api-data.json');
+const middlewares = jsonServer.defaults();
+const jsonPort = process.env.JSON_PORT || 3001; // Puerto para json-server
+app.use('/api', middlewares, router); // Sirviendo datos JSON en /api
+router.listen(jsonPort, () => {
+  console.log(`JSON Server running on port ${jsonPort}`);
 });
- 
+
+// Configurar el puerto de la aplicación principal
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`Servidor Angular corriendo en el puerto ${port}`);
+});
