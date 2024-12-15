@@ -102,9 +102,9 @@
       "id": "0",
       "idCategory": "0",
       "name": "Charizard EX",
-      "uploadPhoto": "https://assets.pokemon.com/static-assets/content-assets/cms2-es-es/img/cards/web/SV03/SV03_ES_125.png",
-      "productDesc": "qweqwe",
-      "mrp": "22",
+      "uploadPhoto": "https://images.wikidexcdn.net/mwuploads/wikidex/0/05/latest/20230921221327/Charizard_ex_%28151_6_TCG%29.png",
+      "productDesc": "Charizard EX",
+      "mrp": "30",
       "dp": "22",
       "gen": "1ª Gen",
       "type": "Fuego",
@@ -116,22 +116,22 @@
       "name": "Zapdos",
       "uploadPhoto": "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_145.png",
       "productDesc": "Zapdos",
-      "mrp": "22",
+      "mrp": "40",
       "dp": "20",
       "gen": "1ª Gen",
-      "type": "Planta",
+      "type": "Electrico",
       "status": "publish"
     },
     {
       "id": "2",
       "idCategory": "0",
       "name": "Alakazam Ex",
-      "uploadPhoto": "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_201.png",
+      "uploadPhoto": "https://assets.pokemon.com/static-assets/content-assets/cms2-es-es/img/cards/web/SV3PT5/SV3PT5_ES_201.png",
       "productDesc": "Alakazam Ex",
       "mrp": "150",
       "dp": "120",
       "gen": "1ª Gen",
-      "type": "Planta",
+      "type": "Psiquico",
       "status": "publish"
     },
     {
@@ -143,7 +143,7 @@
       "mrp": "22",
       "dp": "15",
       "gen": "1ª Gen",
-      "type": "Planta",
+      "type": "Siniestro",
       "status": "publish"
     },
     {
@@ -179,7 +179,7 @@
       "mrp": "30",
       "dp": "22",
       "gen": "3ª Gen",
-      "type": "Planta",
+      "type": "Dragon",
       "status": "publish"
     },
     {
