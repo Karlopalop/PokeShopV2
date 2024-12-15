@@ -6,7 +6,7 @@
     },
   "scripts": {
     "ng": "ng",
-    "start": "serve",
+    "start": "ng serve",
     "postinstall": "ng build --prod",
     "json": "json-server --watch mock-api-data.json --port 3000",
     "build": "ng build",
