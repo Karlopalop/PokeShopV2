@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "postinstall": "ng build --prod",
+    "start": "ng serve",
+    "json": "json-server --watch api/mock-api-data.json --port 3000",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
