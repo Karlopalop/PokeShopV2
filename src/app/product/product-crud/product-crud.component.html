@@ -108,6 +108,10 @@
                                     <option value="1ª Gen">1ª Generación</option>
                                     <option value="2ª Gen">2ª Generación</option>
                                     <option value="3ª Gen">3ª Generación</option>
+                                    <option value="4ª Gen">4ª Generación</option>
+                                    <option value="5ª Gen">5ª Generación</option>
+                                    <option value="6ª Gen">6ª Generación</option>
+                                    <option value="7ª Gen">7ª Generación</option>
                                 </select>
                                 <div *ngIf="addEditProduct && rf.status.errors" class="invalid-feedback">
                                     <div *ngIf="rf.status.errors.required">Selecciona una opcion</div>
@@ -118,7 +122,19 @@
                                 <select class="form-control" formControlName="type" [ngClass]="{'is-invalid':addEditProduct && rf.status.errors}">
                                     <option value="Planta">Planta</option>
                                     <option value="Agua">Agua</option>
-                                    <option value="Fuego">Fuego</option>
+                                    <option value="Psiquico">Psiquico</option>
+                                    <option value="Volador">Volador</option>
+                                    <option value="Lucha">Lucha</option>
+                                    <option value="Veneno">Veneno</option>
+                                    <option value="Tierra">Tierra</option>
+                                    <option value="Dragon">Dragon</option>
+                                    <option value="Fantasma">Fantasma</option>
+                                    <option value="Normal">Normal</option>
+                                    <option value="Electrico">Electrico</option>
+                                    <option value="Roca">Roca</option>
+                                    <option value="Sinistro">Sinistro</option>
+                                    <option value="Hielo">Hielo</option>
+                                    <option value="Bicho">Bicho</option>
                                 </select>
                                 <div *ngIf="addEditProduct && rf.status.errors" class="invalid-feedback">
                                     <div *ngIf="rf.status.errors.required">Selecciona una opcion</div>
@@ -127,7 +143,6 @@
                             <div class="form-group">
                                 <label for="productStatus">Estado</label>
                                 <select class="form-control" formControlName="status" [ngClass]="{'is-invalid':addEditProduct && rf.status.errors}">
-                                    <option value="draft">Vendido</option>
                                     <option value="publish">Publicado</option>
                                     <option value="inactive">Inactivo</option>
                                 </select>
