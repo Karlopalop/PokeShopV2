@@ -6,7 +6,7 @@
     },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm install -g @angular/cli@16.1",
     "postinstall": "ng build --prod",
     "json": "json-server --watch mock-api-data.json --port 3000",
     "build": "ng build",
