@@ -1,0 +1,258 @@
+{
+  "user": [
+    {
+      "id": "6",
+      "aboutYou": "asd",
+      "age": 25,
+      "agreetc": true,
+      "dob": "2024-12-05",
+      "email": "karlopalop@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "Sevilla",
+        "addLine2": null,
+        "city": "Sevilla",
+        "state": "Espa�a",
+        "zipCode": "asd"
+      },
+      "language": [
+        "Espa�ol"
+      ],
+      "mobNumber": "689612535",
+      "name": "Juanca",
+      "password": "123456",
+      "uploadPhoto": "C:\\fakepath\\Zapdos.png",
+      "role": "seller"
+    },
+    {
+      "name": "juanca",
+      "mobNumber": "6356412154",
+      "age": 17,
+      "dob": "2024-12-14",
+      "email": "juanca@gmail.com",
+      "password": "123456",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "aa",
+        "addLine2": null,
+        "city": "Sevilla",
+        "state": "Espa�a",
+        "zipCode": "asd"
+      },
+      "aboutYou": "aaa",
+      "uploadPhoto": "C:\\fakepath\\Squirtle.png",
+      "role": "buyer",
+      "id": "7"
+    },
+    {
+      "id": "8",
+      "aboutYou": "aa",
+      "age": 23,
+      "agreetc": true,
+      "dob": "2024-12-08",
+      "email": "prueba@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "asdad",
+        "addLine2": "asd",
+        "city": "sevilla",
+        "state": "España",
+        "zipCode": "asd"
+      },
+      "language": [
+        "Español"
+      ],
+      "mobNumber": "636258418",
+      "name": "asd",
+      "password": "123456",
+      "uploadPhoto": "C:\\fakepath\\Wartortle.png",
+      "role": "buyer"
+    },
+    {
+      "id": 13,
+      "aboutYou": "aa",
+      "age": 19,
+      "agreetc": true,
+      "dob": "2024-12-10",
+      "email": "karlo@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "AAAA",
+        "addLine2": "AAAA",
+        "city": "Sevilla",
+        "state": "España",
+        "zipCode": "41018"
+      },
+      "language": [
+        "Español"
+      ],
+      "mobNumber": "658914523",
+      "name": "Juanca",
+      "password": "123456",
+      "uploadPhoto": "C:\\fakepath\\Articuno.png",
+      "role": "buyer"
+    }
+  ],
+  "products": [
+    {
+      "id": "0",
+      "idCategory": "0",
+      "name": "Charizard EX",
+      "uploadPhoto": "https://assets.pokemon.com/static-assets/content-assets/cms2-es-es/img/cards/web/SV03/SV03_ES_125.png",
+      "productDesc": "qweqwe",
+      "mrp": "22",
+      "dp": "22",
+      "gen": "1ª Gen",
+      "type": "Fuego",
+      "status": "publish"
+    },
+    {
+      "id": "1",
+      "idCategory": "0",
+      "name": "Zapdos",
+      "uploadPhoto": "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_145.png",
+      "productDesc": "Zapdos",
+      "mrp": "22",
+      "dp": "20",
+      "gen": "1ª Gen",
+      "type": "Planta",
+      "status": "publish"
+    },
+    {
+      "id": "2",
+      "idCategory": "0",
+      "name": "Alakazam Ex",
+      "uploadPhoto": "https://dz3we2x72f7ol.cloudfront.net/expansions/151/en-us/SV3pt5_EN_201.png",
+      "productDesc": "Alakazam Ex",
+      "mrp": "150",
+      "dp": "120",
+      "gen": "1ª Gen",
+      "type": "Planta",
+      "status": "publish"
+    },
+    {
+      "id": "3",
+      "idCategory": "0",
+      "name": "Hoopa EX",
+      "uploadPhoto": "https://cdn.cardsrealm.com/images/cartas/xy7-ancient-origins/en/med/hoopa-ex-3698-36.png?3899?&width=250",
+      "productDesc": "Hoopa Ex",
+      "mrp": "22",
+      "dp": "15",
+      "gen": "1ª Gen",
+      "type": "Planta",
+      "status": "publish"
+    },
+    {
+      "id": "4",
+      "idCategory": "0",
+      "name": "Houndoom EX",
+      "uploadPhoto": "https://www.pokemon.com/static-assets/content-assets/cms2-es-es/img/cards/web/SV03/SV03_ES_134.png",
+      "productDesc": "Houndoom Ex",
+      "mrp": "12",
+      "dp": "5",
+      "gen": "2ª Gen",
+      "type": "Fuego",
+      "status": "inactive"
+    },
+    {
+      "id": "5",
+      "idCategory": "0",
+      "name": "Arcanine EX",
+      "uploadPhoto": "https://assets.pokemon.com/static-assets/content-assets/cms2-es-es/img/cards/web/SV01/SV01_ES_32.png",
+      "productDesc": "Arcanine",
+      "mrp": "20",
+      "dp": "12",
+      "gen": "1ª Gen",
+      "type": "Fuego",
+      "status": "inactive"
+    },
+    {
+      "id": "6",
+      "idCategory": "0",
+      "name": "Latios EX",
+      "uploadPhoto": "https://m.media-amazon.com/images/I/51ztIFtc1EL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "productDesc": "Latios EX",
+      "mrp": "30",
+      "dp": "22",
+      "gen": "3ª Gen",
+      "type": "Planta",
+      "status": "publish"
+    },
+    {
+      "id": "7",
+      "idCategory": "0",
+      "name": "Leafeon",
+      "uploadPhoto": "https://m.media-amazon.com/images/I/51qRFFHsHaL._AC_.jpg",
+      "productDesc": "esdv",
+      "mrp": "12",
+      "dp": "11",
+      "gen": "1ª Gen",
+      "type": "Planta",
+      "status": "publish"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "Polyester Door Curtain",
+        "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
+        "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
+        "mrp": "1000",
+        "dp": "499",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "state": "Choose...",
+        "zipCode": 560037
+      },
+      "contact": "09040398006",
+      "dateTime": "18/07/2019"
+    },
+    {
+      "id": "2",
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "Polyester Door Curtain",
+        "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
+        "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
+        "mrp": "1000",
+        "dp": "499",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "state": "Choose...",
+        "zipCode": 560037
+      },
+      "contact": "09040398006",
+      "dateTime": "30/08/2019"
+    }
+  ],
+  "category": [
+    {
+      "id": "0",
+      "name": "Carta de pokemon"
+    },
+    {
+      "id": "1",
+      "name": "Carta de entrenador"
+    }
+  ]
+}
