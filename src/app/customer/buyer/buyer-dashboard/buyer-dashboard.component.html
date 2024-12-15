@@ -1,0 +1,50 @@
+<br>
+<nav aria-label="breadcrumb">
+  <div class="breadcrumb d-flex gap-3">
+    <label>
+      Generación:
+      <select class="form-control" [(ngModel)]="selectedGen" (change)="filterProducts()">
+          <option value="">Todas las generaciones</option>
+          <option value="1ª Gen">1ª Generación</option>
+          <option value="2ª Gen">2ª Generación</option>
+          <option value="3ª Gen">3ª Generación</option>
+      </select>
+    </label>
+    <label>
+      Tipo de pokemon elemental:
+      <select class="form-control" [(ngModel)]="selectedType" (change)="filterProducts()" >
+          <option value="">Todos los tipos</option>
+          <option value="Planta">Planta</option>
+          <option value="Agua">Agua</option>
+          <option value="Fuego">Fuego</option>
+      </select>
+    </label>  
+    <label>
+      Tipo de carta:
+      <select class="form-control" [(ngModel)]="selectedTypeCard" (change)="filterProducts()">
+          <option value="">Todos los tipos</option>
+          <option value="1">Carta de Entrenador</option>
+          <option value="0">Carta de Pokemon</option>
+      </select>
+    </label>  
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-sm-4 product" *ngFor="let product of filtered_products;">
+    <div class="card">
+      <img src="{{product.uploadPhoto}}" class="card-img-top" alt="{{product.name}}">
+      <div class="card-body">
+        <h4 class="card-title">{{product.name}}</h4>
+        <h6 class="card-category">Categoria: {{getCategoryName(product.idCategory)}}</h6>
+        <h6 class="card-gen">Generación: {{product.gen}}</h6>
+        <h6 class="card-type">Tipo: {{product.type}}</h6>
+        <p><span class="float-left"><strong>Precio con Descuento</strong>: <del>{{product.mrp}}</del></span> <span class="float-right"><strong>Precio</strong>:
+              {{product.dp}}</span></p>
+        <br>
+        <p class="card-text product-desc"> {{product.productDesc}}</p>
+        <a *ngIf="authService.isLoggedIn() " class="btn btn-primary float-right" (click)="buyProduct(product.id)">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>

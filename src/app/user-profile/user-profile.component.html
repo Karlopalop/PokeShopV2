@@ -1,0 +1,129 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h2 class="text-center">Actualizar perfil usuario</h2>
+                <form [formGroup]="userProfileForm" (ngSubmit)="updateProfile()">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" formControlName="name" [ngClass]="{'is-invalid':userProfile && rf.name.errors}" />
+                        <div *ngIf="userProfile && rf.name.errors" class="invalid-feedback">
+                            <div *ngIf="rf.name.errors.required">Nombre requerido</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefono</label>
+                        <input type="tel" class="form-control" formControlName="mobNumber" [ngClass]="{'is-invalid':userProfile && rf.mobNumber.errors}"
+                            numberOnly />
+                        <div *ngIf="userProfile && rf.mobNumber.errors" class="invalid-feedback">
+                            <div *ngIf="rf.mobNumber.errors.required">Telefono requerido</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Edad</label>
+                        <input type="number" class="form-control" formControlName="age" [ngClass]="{'is-invalid':userProfile && rf.age.errors}" />
+                        <div *ngIf="userProfile && rf.age.errors" class="invalid-feedback">
+                            <div *ngIf="rf.age.errors.required">Edad requerida</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" class="form-control" formControlName="dob" [ngClass]="{'is-invalid':userProfile && rf.dob.errors}" />
+                        <div *ngIf="userProfile && rf.dob.errors" class="invalid-feedback" [ngClass]="{'is-invalid':userProfile && rf.dob.errors}">
+                            <div *ngIf="rf.dob.errors.required">Fecha de nacimiento requerida</div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" formControlName="email"
+                                [ngClass]="{'is-invalid':userProfile && rf.email.errors}">
+                            <div *ngIf="userProfile && rf.email.errors" class="invalid-feedback">
+                                <div *ngIf="rf.email.errors.required">Email requerido</div>
+                                <div *ngIf="rf.email.errors.email">Email no valido</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="Password" formControlName="password"
+                                [ngClass]="{'is-invalid':userProfile && rf.password.errors}">
+                            <div *ngIf="userProfile && rf.password.errors" class="invalid-feedback">
+                                <div *ngIf="rf.password.errors.required">Contraseña requerida</div>
+                                <div *ngIf="rf.password.errors.minlength">Contraseña minima de 6 caracteres</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Direccion</label>
+                        <input type="text" class="form-control" placeholder="1234 Main St" formControlName="addLine1"
+                            [ngClass]="{'is-invalid':userProfile && rf.addLine1.errors}">
+                        <div *ngIf="userProfile && rf.addLine1.errors" class="invalid-feedback">
+                            <div *ngIf="rf.addLine1.errors.required">Direccion requerida</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Direccion 2</label>
+                        <input type="text" class="form-control" placeholder=""
+                            formControlName="addLine2">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Ciudad</label>
+                            <input type="text" class="form-control" formControlName="city" [ngClass]="{'is-invalid':userProfile && rf.city.errors}">
+                            <div *ngIf="userProfile && rf.city.errors" class="invalid-feedback">
+                                <div *ngIf="rf.city.errors.required">Ciudad requerida</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Pais</label>
+                            <select id="inputState" class="form-control" formControlName="state" [ngClass]="{'is-invalid':userProfile && rf.state.errors}">
+                                <option selected>España</option>
+                            </select>
+                            <div *ngIf="userProfile && rf.state.errors" class="invalid-feedback">
+                                <div *ngIf="rf.state.errors.required">Select one option</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Codigo postal</label>
+                            <input type="text" class="form-control" formControlName="zipCode" [ngClass]="{'is-invalid':userProfile && rf.zipCode.errors}"
+                                numberOnly>
+                            <div *ngIf="userProfile && rf.zipCode.errors" class="invalid-feedback">
+                                <div *ngIf="rf.zipCode.errors.required">Codigo postal requerido</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Genero</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" formControlName="gender" value="Male"
+                                [ngClass]="{'is-invalid':userProfile && rf.gender.errors}">
+                            <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" formControlName="gender" value="Female"
+                                [ngClass]="{'is-invalid':userProfile && rf.gender.errors}">
+                            <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Descripción</label>
+                        <textarea class="form-control" rows="3" formControlName="aboutYou" [ngClass]="{'is-invalid':userProfile && rf.aboutYou.errors}"></textarea>
+                        <div *ngIf="userProfile && rf.aboutYou.errors" class="invalid-feedback">
+                            <div *ngIf="rf.aboutYou.errors.required">Escribe algo sobre ti</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Foto de perfil</label>
+                        <input type="file" class="form-control-file" formControlName="uploadPhoto" [ngClass]="{'is-invalid':userProfile && rf.uploadPhoto.errors}">
+                        <div *ngIf="userProfile && rf.uploadPhoto.errors" class="invalid-feedback">
+                            <div *ngIf="rf.uploadPhoto.errors.required">Foto necesaria</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Actulizar perfil</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
