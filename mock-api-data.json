@@ -193,6 +193,18 @@
       "gen": "3ª Gen",
       "type": "Planta",
       "status": "publish"
+    },
+    {
+      "id": "8",
+      "idCategory": "0",
+      "name": "Blastoise",
+      "uploadPhoto": "https://images.wikidexcdn.net/mwuploads/wikidex/2/28/latest/20230922172259/Blastoise_ex_%28151_9_TCG%29.png",
+      "productDesc": "Blastoise",
+      "mrp": "40",
+      "dp": "25",
+      "gen": "1ª Gen",
+      "type": "Agua",
+      "status": "publish"
     }
   ],
   "orders": [

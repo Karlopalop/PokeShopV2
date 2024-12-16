@@ -23,16 +23,5 @@ export class HttpTokenInterceptor implements HttpInterceptor {
         else {
             return next.handle(req)
         }
-        // // authorization with jwt token
-        // let currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        // if (currentUser && currentUser.token) {
-        //     let request = req.clone({
-        //         setHeaders: {
-        //             Authorization: `Bearer ${currentUser.token}`
-        //         }
-        //     });
-        // }
-
-        // return next.handle(req);
     }
 }
